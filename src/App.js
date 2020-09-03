@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { GiPaintBrush, GiCoffeeCup, GiKeyboard } from 'react-icons/gi'
+import { FiUsers, FiHome, FiGlobe, FiAirplay } from 'react-icons/fi';
 
 import Info from './components/Info';
 
@@ -18,8 +19,11 @@ import {
   Header,
   Content,
   RecentContainer,
-  Features
+  Features,
+  Pricing,
+  Buy
 } from './styles'
+
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -88,7 +92,7 @@ function App() {
             <h1>Landing Page</h1>
             <h2>A simple and modern one page business theme for your company</h2>
 
-            <a href="#">Call to action</a>
+            <a href="#" className="button">Call to action</a>
           </main>
         </Content>
       </Header>
@@ -131,12 +135,12 @@ function App() {
             </div>
             <div className="features__card">
               <GiCoffeeCup size={60} color="#2075EF" />
-              <h3>Design with psd files</h3>
+              <h3>Support & Coffee</h3>
               <p>Alias, officiis assumenda nam cumque, doloribus a beatae quis rerum repudiandae fuga impedit aliquid exercitationem libero in deleniti.</p>
             </div>
             <div className="features__card">
               <GiKeyboard size={60} color="#2075EF" />
-              <h3>Design with psd files</h3>
+              <h3>Clean Coded</h3>
               <p>Omnis sint, delectus libero voluptatibus reprehenderit mollitia nesciunt aliquam debitis assumenda asperiores est sunt molestias.</p>
             </div>
           </div>
@@ -150,10 +154,74 @@ function App() {
       />
       <Info
         image={info2}
-        title="Responsive - you bet"
+        title="Easily changing colors"
         description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate commodi at autem aspernatur mollitia odit doloremque officia distinctio deleniti accusamus, quaerat quibusdam repudiandae laudantium aut quo temporibus, consectetur veritatis beatae?"
         reverse
       />
+
+      <Pricing id="pricing">
+        <div>
+          <FiUsers size={40} />
+          <p>beatae</p>
+          <strong>
+            <span>$</span>
+            <span>29</span>
+          </strong>
+          <p>adipisicing soluta</p>
+          <p>consectetur quos</p>
+          <p>repellat nam</p>
+          <p>exercitationem</p>
+        </div>
+        <div>
+          <FiHome size={40} />
+          <p>beatae</p>
+          <strong>
+            <span>$</span>
+            <span>39</span>
+          </strong>
+          <p>adipisicing soluta</p>
+          <p>consectetur quos</p>
+          <p>repellat nam</p>
+          <p>exercitationem</p>
+        </div>
+        <div>
+          <FiGlobe size={40} />
+          <p>beatae</p>
+          <strong>
+            <span>$</span>
+            <span>49</span>
+          </strong>
+          <p>adipisicing soluta</p>
+          <p>consectetur quos</p>
+          <p>repellat nam</p>
+          <p>exercitationem</p>
+        </div>
+        <div>
+          <FiAirplay size={40} />
+          <p>beatae</p>
+          <strong>
+            <span>$</span>
+            <span>59</span>
+          </strong>
+          <p>adipisicing soluta</p>
+          <p>consectetur quos</p>
+          <p>repellat nam</p>
+          <p>exercitationem</p>
+        </div>
+      </Pricing>
+
+      <Buy>
+        <div>
+          <h1>Simple and effective landing page</h1>
+          <h2>Deserunt iusto voluptates alias vitae assumenda porro minus neque.</h2>
+
+          <a href="#" className="button">Buy it for $15</a>
+        </div>
+      </Buy>
+
+      <footer>
+        Developed by <a href="https://github.com/peedrojs" target="_blank" rel="noopener noreferrer">peedrojs</a>
+      </footer>
     </Container>
   );
 }

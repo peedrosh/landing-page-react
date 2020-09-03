@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { shade } from 'polished'
 
 import headerBackground from './assets/header.jpg'
+import footerBackground from './assets/footer.jpg'
 
 export const Container = styled.main`
   nav {
@@ -13,12 +14,7 @@ export const Container = styled.main`
     transition: all ease .4s;
 
     &.active {
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-
-      div a {
-        color: #333;
-      }
+      background: #2f3641;
     }
 
     & > div {
@@ -70,6 +66,35 @@ export const Container = styled.main`
     max-width: 700px;
     margin: 0 auto;
   }
+
+  .button {
+    background: #2075EF;
+    display: inline-block;
+    padding: 1.6rem 2.4rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    transition: background-color .2s;
+
+    &:hover {
+      background: ${shade(0.1, '#2075EF')};
+    }
+  }
+
+  footer {
+    background: #2f3641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    color: #fff;
+
+    a {
+      color: #2075EF;
+      margin-left: 0.4rem;
+    }
+  }
 `;
 
 export const Header = styled.header`
@@ -101,21 +126,6 @@ export const Content = styled.div`
       font-size: 2.4rem;
       line-height: 150%;
       margin: 0.8rem 0 4rem;
-    }
-
-    a {
-      background: #2075EF;
-      display: inline-block;
-      padding: 1.6rem 2.4rem;
-      color: #fff;
-      font-weight: 500;
-      letter-spacing: 0.2rem;
-      text-transform: uppercase;
-      transition: background-color .2s;
-
-      &:hover {
-        background: ${shade(0.1, '#2075EF')};
-      }
     }
   }
 `;
@@ -192,5 +202,64 @@ export const Features = styled.section`
         font-size: 2.4rem;
       }
     }
+  }
+`;
+
+export const Pricing = styled.section`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 97.2rem;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+
+  div {
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    svg {
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      margin: 0.8rem 0;
+    }
+
+    strong {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    strong span:last-child {
+      font-size: 6.4rem;
+      font-weight: 300;
+    }
+  }
+`
+
+export const Buy = styled.section`
+  background: url(${footerBackground}) no-repeat center;
+  background-size: cover;
+
+  div {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem;
+    min-height: 60vh;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    margin: 0.8rem 0 4.8rem;
+    font-size: 1.6rem;
   }
 `;
