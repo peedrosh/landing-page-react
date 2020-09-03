@@ -12,6 +12,7 @@ export const Container = styled.main`
     right: 0;
     left: 0;
     transition: all ease .4s;
+    padding: 0 2rem;
 
     &.active {
       background: #2f3641;
@@ -110,6 +111,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
 
   main {
     color: #fff;
@@ -126,6 +128,12 @@ export const Content = styled.div`
       font-size: 2.4rem;
       line-height: 150%;
       margin: 0.8rem 0 4rem;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    main h1 {
+      font-size: 4.8rem;
     }
   }
 `;
@@ -180,6 +188,18 @@ export const RecentContainer = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .recent--posts {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .recent--posts {
+      grid-template-columns: 1fr;
+    }
+  }
 `
 
 export const Features = styled.section`
@@ -200,6 +220,10 @@ export const Features = styled.section`
       .features__card h3 {
         margin: 2.4rem 0;
         font-size: 2.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -236,6 +260,10 @@ export const Pricing = styled.section`
       font-size: 6.4rem;
       font-weight: 300;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `
 

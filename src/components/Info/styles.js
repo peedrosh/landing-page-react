@@ -21,4 +21,26 @@ export const Container = styled.div`
       ${props => props.reverse ? 'padding-right' : 'padding-left'}: 8rem;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    div {
+      padding: 8rem 0 0 0;
+
+      &:last-child {
+        padding-left: 8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    div {
+      padding: 2rem;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
 `
