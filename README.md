@@ -50,4 +50,4 @@ $ yarn start
 
 ---
 
-<div align="center">Criado por <a href="https://github.com/peedrojs">peedrojs</a></div>
+<div align="center">Criado por <a href="https://github.com/peedrosh">peedrosh</a></div>
