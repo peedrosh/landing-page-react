@@ -220,7 +220,7 @@ function App() {
       </Buy>
 
       <footer>
-        Developed by <a href="https://github.com/peedrojs" target="_blank" rel="noopener noreferrer">peedrojs</a>
+        Developed by <a href="https://github.com/peedrosh" target="_blank" rel="noopener noreferrer">peedrosh</a>
       </footer>
     </Container>
   );
