@@ -1,5 +1,5 @@
 <h1>
-  <img src="https://ik.imagekit.io/flett/portfolio/landing1_uu0LOTLvRo4.png" alt="Landing page">
+  <img src="https://ik.imagekit.io/flett/portfolio/Sem_t_tulo_HyEaPKDjC.png" alt="Landing page">
 </h1>
 
 <h3 align="center">
